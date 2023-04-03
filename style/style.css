@@ -43,10 +43,20 @@ body {
 .main__container {
   justify-content: center;
   background-color: #f0f8ff;
-  border-radius: 5rem;
+  border-radius: 1rem;
   -webkit-box-shadow: 15px 15px 10px -3px rgba(69, 69, 69, 0.6);
   -moz-box-shadow: 15px 15px 10px -3px rgba(69, 69, 69, 0.6);
   box-shadow: 15px 15px 10px -3px rgba(69, 69, 69, 0.6);
   display: flex;
   width: 80%;
+}
+
+.main__container__header {
+  border-bottom: #cccccc solid 1px;
+  margin: 2rem 0;
+}
+
+.main__container__header__title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
