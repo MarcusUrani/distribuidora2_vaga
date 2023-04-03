@@ -1,0 +1,32 @@
+/* Estilos globais */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+strong,
+sub,
+b,
+div,
+section,
+embed,
+img,
+figcaption,
+figure,
+article,
+header,
+main,
+nav,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0099ff;
+  font-family: "Poppins", sans-serif;
+}
