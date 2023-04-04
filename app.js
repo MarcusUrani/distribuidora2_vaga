@@ -1,3 +1,4 @@
+/* Variável que armazena os dados da distribuidora */
 const branches = [
   { id: "1", name: "SP", invoicing: 67836.43, percents: 0 },
   { id: "2", name: "RJ", invoicing: 36678.66, percents: 0 },
@@ -5,14 +6,20 @@ const branches = [
   { id: "4", name: "ES", invoicing: 27165.48, percents: 0 },
   { id: "5", name: "Outros", invoicing: 19849.53, percents: 0 },
 ];
-
+/* Variável que busca a seção que os resultados serão exibidos */
 const resultSection = document.querySelector(".main__container__results");
 
+/* Função que calcula a soma total das distribuidoras */
 function getTotalValue(data) {
+  /* Variável que armazena o valor total */
   let totalValue = 0;
+  /* Laço de repetição que soma o valor da receita de cada 
+  distribuidora e soma com o valor já armazenado em valor total */
   for (let i = 0; i < data.length; i++) {
     totalValue += data[i].invoicing;
   }
+  /* Chama a função de calcular a porcentagem enviando o valor total e os dados
+  das distribuidoras */
   calcPercents(totalValue, data);
 }
 
