@@ -12,7 +12,7 @@ Para tal, foi disponibilizado os valores e localização de cada uma delas.
 
 ## Como acessar o projeto? 👩🏻‍💻
 
-- Acesse a página do projeto por ese [link](https://google.com).
+- Acesse a página do projeto por ese [link](https://target-vaga02.netlify.app).
 
 - O usuário será redirecionado para a página do projeto.
 
