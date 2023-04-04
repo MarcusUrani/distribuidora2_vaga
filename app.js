@@ -23,14 +23,24 @@ function getTotalValue(data) {
   calcPercents(totalValue, data);
 }
 
+/* Função que recebe o valor total e os dados e calcula a porcentagem de cada
+distribuidora */
 function calcPercents(value, data) {
+  /* Laço de repetição que adiciona o valor resultante do calculo da porcentagem,
+  que é feito dividindo o valor da receita da distribuidora pelo valor total
+  e multiplicando por 100, ao objeto de cada distribuidora */
   for (let i = 0; i < data.length; i++) {
     data[i].percents = (data[i].invoicing / value) * 100;
   }
+  /* Chama a função de inserir os dados na tela */
   showDataOnScreen();
 }
 
+/* Função que insere os dados na tela */
 function showDataOnScreen() {
+  /* Adiciona ao HTML o mapeamento feito no objeto branches, utilizando
+  seu id como a key para o map e exibindo o nome, valores e porcentagens de cada
+  distribuidora */
   resultSection.innerHTML = branches
     .map(
       (item) =>
@@ -47,4 +57,5 @@ function showDataOnScreen() {
     .join("");
 }
 
+/* Chama a função de buscar o valor total, que inicia todo o processo */
 getTotalValue(branches);
