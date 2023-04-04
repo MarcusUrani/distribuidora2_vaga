@@ -27,11 +27,11 @@ function showDataOnScreen() {
   resultSection.innerHTML = branches
     .map(
       (item) =>
-        `<article key="${item.id}" class=".main__container__results_item">
-          <h2 class=".main__container__results__item__title">Resultado da distribuidora: ${
+        `<article key="${item.id}" class="main__container__results_item">
+          <h2 class="main__container__results__item__title">Resultado da distribuidora: ${
             item.name
           }</h2>
-          <p class=".main__container__results__item__percents">
+          <p class="main__container__results__item__percents">
             ${item.percents.toFixed(2)} %
           </p>
           </article>
