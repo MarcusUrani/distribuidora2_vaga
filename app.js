@@ -32,7 +32,7 @@ function showDataOnScreen() {
             item.name
           }</h2>
           <p class="main__container__results__item__percents">
-            ${item.percents.toFixed(2)} %
+           R$ ${item.invoicing} - ${item.percents.toFixed(2)}%
           </p>
           </article>
          `
