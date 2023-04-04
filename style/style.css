@@ -41,6 +41,7 @@ body {
 
 /* Estilo caixa da seção resultados*/
 .main__container {
+  align-items: center;
   justify-content: center;
   background-color: #f0f8ff;
   border-radius: 1rem;
@@ -48,12 +49,13 @@ body {
   -moz-box-shadow: 15px 15px 10px -3px rgba(69, 69, 69, 0.6);
   box-shadow: 15px 15px 10px -3px rgba(69, 69, 69, 0.6);
   display: flex;
+  flex-direction: column;
   width: 80%;
 }
 
 .main__container__header {
   border-bottom: #cccccc solid 1px;
-  margin: 2rem 0;
+  margin: 1.25rem 0;
 }
 
 .main__container__header__title {
