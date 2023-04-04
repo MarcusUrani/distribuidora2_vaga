@@ -14,6 +14,10 @@ function getTotalValue(data) {
   calcPercents(totalValue, data);
 }
 
-function calcPercents(value, data) {}
+function calcPercents(value, data) {
+  for (let i = 0; i < data.length; i++) {
+    data[i].percents = (data[i].invoicing / value) * 100;
+  }
+}
 
 getTotalValue(branches);
